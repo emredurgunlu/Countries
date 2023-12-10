@@ -40,6 +40,7 @@ function App() {
   return (
     <div className={AppStyle["container"]}>
       <input
+      className={AppStyle["searchbar"]}
         onChange={handleChange}
         type="text"
         placeholder="search country..."

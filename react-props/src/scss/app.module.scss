@@ -2,7 +2,7 @@
 .container{
     @include flex(space-evenly, center, column);
 }
-input{
+.searchbar{
     width: 50%;
     max-width: 800px;
     height: 30px;

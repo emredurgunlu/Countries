@@ -1,6 +1,6 @@
 @import "./mixins";
 .container1{
-    @include flex(space-between, start);
+    @include flex(space-between, flex-start);
     background-color: rgb(20, 20, 20);
     border-radius: 25px;
 }
