@@ -7,6 +7,7 @@ const Countries = () => {
   const { filteredCountries } = useSelector((state) => state.counter);
   function handleClick(item) {
     dispatch(selectCountry(item));
+    console.log(item.name.common);
   }
   return (
       <div className={style["container"]}>
