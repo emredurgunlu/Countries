@@ -11,7 +11,7 @@ import style from "./scss/app.module.scss";
 function App() {
   const dispatch = useDispatch();
   const { loading, selectedCountry } = useSelector((state) => state.counter);
-
+// shallowEqual metodu işe yaramıyor?
   useEffect(() => {
     dispatch(getCountries());
 
