@@ -1,4 +1,7 @@
 @import "./mixins";
-.container{
-    @include flex(space-evenly, center, column);
+.container1{
+    text-align: center,
+}
+.container2{
+    @include flex(space-evenly, center, row);
 }

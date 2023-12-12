@@ -9,8 +9,7 @@ const Countries = () => {
     dispatch(selectCountry(item));
   }
   return (
-    <div className={style["container1"]}>
-      <div className={style["container2"]}>
+      <div className={style["container"]}>
         {filteredCountries.map((item, index) => (
           <div
             key={index}
@@ -26,7 +25,7 @@ const Countries = () => {
           </div>
         ))}
       </div>
-    </div>
+
   );
 };
 

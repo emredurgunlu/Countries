@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const initialState = {
-  value: 0,
   loading: true,
   allCountries: [],
   filteredCountries:[],
@@ -28,15 +27,6 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
     selectCountry: (state, action) => {
       state.selectedCountry = action.payload
     },
@@ -58,6 +48,6 @@ export const counterSlice = createSlice({
 })
 
 // reducers: {} içindeki fonksyonlar burada export ediliyor
-export const { increment, decrement, incrementByAmount, selectCountry, filterCountries } = counterSlice.actions
+export const { selectCountry, filterCountries } = counterSlice.actions
 
 export default counterSlice.reducer
