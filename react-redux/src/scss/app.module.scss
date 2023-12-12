@@ -1,0 +1,4 @@
+@import "./mixins";
+.container{
+    @include flex(space-evenly, center, column);
+}
